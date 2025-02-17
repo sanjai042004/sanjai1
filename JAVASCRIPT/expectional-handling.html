@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        // try{
+        //      // let a;
+        // console.log(a);
+
+        // }
+        // catch(e){
+        //     console.log("Error",e);
+        // }
+        // finally{
+        //     console.log("Finally block");
+        // }
+        
+
+
+        function VoteEligibility(age){
+            if(age==undefined){
+                throw new ReferenceError("Age is required");
+                
+            }
+            if(age<=0){
+                throw new  ReferenceError("Age is must be greater than 0")
+            }
+            if(age>=18){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        const age=18;
+        
+      try {
+        if (VoteEligibility(18)) {
+          console.log("Eligible to vote");
+        } else {
+          console.log("Not eligible to vote");
+        }
+      } 
+      catch (e) {
+        console.error("An error occurred: ", e.message);
+      }
+    </script>
+</body>
+</html>

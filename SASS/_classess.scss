@@ -1,0 +1,13 @@
+.box1 {
+    @extend .center;
+    @include box(300px, 300px, $color1);
+  
+    .box2 {
+      @extend .center;
+      @include box(200px, 200px, $color2);
+  
+      .box3 {
+        @include box(100px, 100px, $color3);
+      }
+    }
+  }

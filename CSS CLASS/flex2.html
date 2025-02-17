@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: flex;
+        max-width: 1000px;
+        margin-inline: auto;
+        flex-wrap: wrap;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* flex-direction: column; */
+      }
+
+      .box {
+        height: 100px;
+        width: 200px;
+      }
+
+      .child1 {
+        background-color: rgb(255, 255, 127);
+        /* flex-basis: 100px; */
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      .child2 {
+        background-color: rgb(193, 127, 255);
+        flex-shrink: 4;
+        flex-grow: 1;
+      }
+      .child3 {
+        background-color: aquamarine;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="parent">
+      <section class="box child1"></section>
+      <section class="box child2"></section>
+      <section class="box child3"></section>
+    </main>
+  </body>
+</html>

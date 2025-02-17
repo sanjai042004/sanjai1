@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            font-family: "Poppins", serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5px;
+            background-color: whitesmoke;
+
+        }
+          
+        .logo {
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bold;
+            color: #130404;
+        }
+        .nav-link{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+
+        .navbar-buttons{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            cursor: pointer;
+
+        }
+        .icon{
+            border: 1px solid black;
+            border-radius: 50px;
+            padding: 5px;
+            
+        }
+        .icon:hover{
+            background-color: rgb(225, 4, 41);
+            transition: color 0.5s ease-in;
+        }
+        .button{
+            padding: 5px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            color: white;
+            background-color: rgb(191, 15, 44);
+        
+        }
+        .button:hover{
+            background-color: black;
+            color: rgb(191, 15, 44) ;
+        }
+
+        /* ---dropdown menu--  */
+        .dropdown{
+            display: inline-block;
+            
+        }
+
+       .dropdown .dropbtn{
+        
+        color:black;
+        cursor: pointer;
+        
+       }
+       .dropdown .dropbtn:hover{
+        color: rgb(207, 16, 80);
+        transition: color 0.5s ease-out;
+       }
+       .dropdown a{
+        display: block;
+        color: black;
+        text-decoration: none;
+        
+
+       }
+       .dropdown a:hover{
+        color: rgb(231, 6, 167);
+       }
+   
+       .dropdown .content{
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        border-radius: 2px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.951);
+        min-width: 150px;
+        padding: 5px 20px;
+        transition: 0.5s;
+
+       }
+       .dropdown:hover .content{
+        display: block;
+
+       }
+
+       /* ------------------------------------ */
+         .main{
+            background-color: hsla(186, 48%, 76%, 0.76);
+            display: flex;
+            justify-content: space-between;
+
+         }
+
+
+    
+
+        
+
+       
+
+
+
+   
+    </style>
+</head>
+<body>
+   <header>
+        <h1 class="logo">Jano.</h1>
+        <nav>
+            <ul class="nav-link">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn" style="color: rgb(203, 6, 39);">Home</a>
+                    <div class="content">
+                      <a href="#">insurance</a>
+                      <a href="#">App landing</a>
+                      <a href="#">Non profit charity</a>
+                      <a href="#">web hosting</a>
+                      <a href="#">Lead Genertion</a>
+                      <a href="#">Design Agency</a>
+                      <a href="#">Real Estate</a>
+                      <a href="#">SaaS Product</a>
+                      <a href="#">Personal Portfolio</a>
+                      <a href="#">SEO Digital Agency</a>
+                      <a href="#">Crypto</a>
+                      <a href="#">Agency Modern</a>
+                      <a href="#">Education</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">pages</a>
+                    <div class="content">
+                      <a href="#">About Us</a>
+                      <a href="#">Team</a>
+                      <a href="#">Service</a>
+                      <a href="#">Pricing</a>
+                      <a href="#">Features</a>
+                      <a href="#">Testimonial</a>
+                      <a href="#">FAQs</a>
+                      <a href="#">Signin</a>
+                      <a href="#">Signup</a>
+                      <a href="#">404 Error</a>
+                      
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">News</a>
+                    <div class="content">
+                      <a href="#">List With Sidebar</a>
+                      <a href="#">Grid With Sidebar</a>
+                      <a href="#">Grid Layout</a>
+                      <a href="#">Blog Details</a>
+                   
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Portfolio</a>
+                    <div class="content">
+                      <a href="#">Portfolio 1</a>
+                      <a href="#">Portfolio 2</a>
+                      <a href="#">Portfolio 3</a>
+                      <a href="#">Portfolio 4</a>
+                      <a href="#">Portfolio 5</a>
+                      <a href="#">Portfolio 6</a>
+                      <a href="#">Portfolio 7</a>
+                      <a href="#">Portfolio Detail Simple</a>
+                      <a href="#">Portfolio Detail Full</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Contact</a>
+                    <div class="content">
+                      <a href="#">Contact-Insurance</a>
+                      <a href="#">Contact-Agency</a>
+                      <a href="#">Contact-Web Hosting</a>
+                      <a href="#">Contact-L.Generation</a>
+                      
+                      
+                    </div>
+                </div>
+                
+               
+            </ul>
+        </nav>
+        <div class="navbar-buttons">
+            <img  class="icon" height="30px" src="image/contact.png" alt="Profile Icon">
+            <button class="button">contact </button>
+        </div>
+    </header>
+
+    <section class="main">
+        <div >
+        <h1>We’r Help <br>
+            to Achive your  Success.</h1>
+
+
+            <p>Agency work with top rated talented people provide qulaity services.</p>
+        </div>
+        <img class="image" src="image/ils_01.png" height="800px" alt="">
+
+
+
+
+    </section>
+    
+</body>
+</html>

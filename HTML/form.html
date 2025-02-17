@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            height: 100vh;
+            margin: 0;
+            background-color: gray;
+        }
+        form{
+            width: 400px;
+            background-color: rgba(198, 216, 236, 0.185);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 10px 10px 30px ;
+        }
+        fieldset{
+            border: 2px solid black;
+            padding: 30px;
+            margin: 0;
+        }
+        legend{
+            font-weight: bold;
+            margin-bottom:50px ;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <!-- --HTML FORMS EXAMPLE--  -->
+
+    <h1>html forms</h1>
+<form action="action_page.php">
+    <label for="userName">USERNAME :</label> <br>
+    <input type="text" id="userName" name="userName"> <br> <br>
+    <label for="password">password :</label> <br>
+    <input type="text" id="password" name="password">
+<br>
+    <input type="submit" value="submit ">
+
+
+</form>
+
+
+<!-- --checkbox form--  -->
+<form action="action_page.php">
+ <fieldset>
+    <legend>select your subject :</legend> <br>
+
+    <input type="checkbox" id="checkbox1" name="checkbox1">
+    <label for="--checkbox"> html</label><br>
+    <input type="checkbox" id="checkbox2" name="checkbox2">
+    <label for="--checkbox"> css</label><br>
+    <input type="checkbox" id="checkbox3" name="checkbox3">
+    <label for="--checkbox"> javascript</label>
+</fieldset>
+</form>
+
+<!-- --ADVACED HTML FORMS--  -->
+
+<form action="action_page.php">
+    <fieldset>
+        <legend>USER PERSONAL INFORMATION</legend>
+        <label for="text">Enter Your Full Name :</label>
+        <input type="text" id="name" name="name" required> <br><br>
+        <label for="email">Enter Your Email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Enter Your Password :</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="ConfirmPassword">Confirm Your Password :</label>
+        <input type="password" id="ConfirmPassword" name="ConfirmPassword" required><br><br>
+         
+
+        <label>Enter Your Gender :</label><br>
+        <div>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender" value="others" id="others">
+            <label for="others">others</label><br>
+        </div><br>
+
+        <label for="dob">Enter Your Date Of Birth :</label><br><br>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="address">Enter Your Address :</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+        <input type="submit" value="Submit" />
+    </fieldset>
+</form>
+
+
+
+
+    
+</body>
+</html>

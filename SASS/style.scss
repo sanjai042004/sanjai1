@@ -1,0 +1,11 @@
+@import "_variables";
+@import "mixins";
+@import "classess";
+
+
+body {
+    @extend .center;
+    min-height: 100vh;
+    margin: 0%;
+    @import "box1";
+  }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+
+      .max-width {
+        max-width: 1440px;
+        width: 95%;
+        margin-inline: auto;
+      }
+
+      .flex-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .col {
+        flex-grow: 1;
+        flex-basis: calc(100% / 3 - 10px);
+        /* background-color: aqua; */
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .image {
+        margin-bottom: 10px;
+      }
+
+      /* @media (max-width: 600px) {
+        .col {
+          flex-basis: calc(100% / 2 - 5px);
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <header class="max-width">
+      <h1>Welcome to our Website</h1>
+    </header>
+    <main class="flex-container max-width">
+      <section class="col col1">
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/27163466/pexels-photo-27163466/free-photo-of-woman-reading-a-book-in-shadow.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/21193046/pexels-photo-21193046/free-photo-of-a-boat-is-docked-in-front-of-a-row-of-buildings.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/9929885/pexels-photo-9929885.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+      </section>
+      <section class="col col2">
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/18936031/pexels-photo-18936031/free-photo-of-korean-bbq-restaurant.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/28716782/pexels-photo-28716782/free-photo-of-elegant-gold-earrings-on-white-silk-fabric.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/28494944/pexels-photo-28494944/free-photo-of-creative-portrait-with-mirror-reflection-in-berlin.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+      </section>
+      <section class="col col3">
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/28874283/pexels-photo-28874283/free-photo-of-minimal-workspace-with-laptop-and-coffee-mug.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/27363152/pexels-photo-27363152/free-photo-of-night-stand-near-bed.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/9632879/pexels-photo-9632879.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+            alt="image"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
